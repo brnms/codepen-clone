@@ -33,6 +33,23 @@ code {
   background: hsl(225, 6¨, 25%);
 }
 
+.expand-collapse-btn {
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll{
+  position: absolute;
+  overflow: hidden !important;
+}
+
 .editor-title {
   display: flex;
   justify-content: space-between;
